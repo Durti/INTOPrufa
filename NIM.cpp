@@ -28,6 +28,9 @@ void spila( );
 //mismargar hrúgur í hvert og eitt skipti:
 int hrugufjoldi;
 
+//um medlimi hopsins
+void about( );
+
 //Hér byrjar aðalforritið:
 int main( )
 {
@@ -38,8 +41,9 @@ int main( )
 		cout << "                ADALVALMYND " << endl << endl;
 		cout << "                      1. Spila NIM" << endl;
 		cout << "                      2. Birta reglurnar i NIM" << endl;
-		cout << "                      3. Haetta " << endl << endl;
-		cout << "                      Veldu 1, 2 eda 3:" << endl << endl;
+		cout << "                      3. Um medlimi hops " << endl;
+		cout << "                      4. Haetta "<<endl<<endl;
+		cout << "                      Veldu 1, 2, 3 eda 4:" << endl << endl;
 		cin >> val;
 		switch ( val )
 		{
@@ -50,10 +54,13 @@ int main( )
 			hjalp( );
 			break;
 		case 3:
+			about( );
 			break;
+		case 4:
+			break;	
 		}
 	}
-	while ( val != 3 );
+	while ( val != 4 );
 
 	return 0;
 }
@@ -89,6 +96,16 @@ void spila( )
 		birta( hruga );
 	}
 	while ( samtals( hruga ) );
+}
+
+void about( )
+{
+	cout <<"     Medlimir thessa hops eru: "<<endl<<endl;
+	cout <<"      Hjortur Steingrimsson "<<endl;
+	cout <<"              OG "<<endl;
+	cout <<"      Rakel Dogg Nordfjord "<<endl<<endl;
+	cout <<endl<<endl<<endl<<endl;
+	getchar( );
 }
 
 void hjalp( )
