@@ -100,6 +100,7 @@ void spila( )
 
 void about( )
 {
+	cout <<"Thetta er fyrir verkefni 6 i INTO 2013" <<endl;
 	cout <<"     Medlimir thessa hops eru: "<<endl<<endl;
 	cout <<"      Hjortur Steingrimsson "<<endl;
 	cout <<"              OG "<<endl;
